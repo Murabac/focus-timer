@@ -1,0 +1,6 @@
+.container{
+    overflow: hidden;
+    width: 100%;
+    min-height: 668px;
+   background:  url(./assets/images/subway-lines.png);
+}

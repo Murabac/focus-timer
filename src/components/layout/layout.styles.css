@@ -1,0 +1,8 @@
+.TimerContainer{
+  display: grid;
+  width:  600px;
+  margin: 100px auto;
+  text-align: center;
+  background: #e74c3c;
+  border-radius: 15px;
+}
