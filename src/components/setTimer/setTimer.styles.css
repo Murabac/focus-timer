@@ -12,6 +12,7 @@
   overflow: hidden;
   margin: 1em auto;
   background: #192434;
+  border-radius: 15px;
 }
 .lables{
     font-family: 'Spicy Rice', cursive;
@@ -21,8 +22,7 @@
     height: 100%;
     padding: 1em;
     font-size: 1em;
-    transition: transform 400ms;
-    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  
     line-height: 18px;
     color:  #fff;
 }
@@ -37,20 +37,12 @@
   font-size:  20px;
   font-weight: bold;
   border: none;
-  -webkit-transform: translate3D(-100%, 0, 0);
-          transform: translate3D(-100%, 0, 0);
-  transition: -webkit-transform 400ms;
-  transition: transform 400ms;
-  transition: transform 400ms, -webkit-transform 400ms;
-  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-  transition-delay: 60ms;
+  -webkit-transform: translate3D(75%, 0, 0);
+  transform: translate3D(75%, 0, 0);
+  -webkit-transform: translate3D(100%, 0, 0);
+  transform: translate3D(100%, 0, 0);
+  outline: none;
+  border-radius: 15px;
+ 
 }
-.inputs:focus, .inputs.filled{
-    -webkit-transform: translate3D(100%, 0, 0);
-    transform: translate3D(100%, 0, 0);
-outline: none;
-}
-.inputs:focus + .lables, .inputs.filled + .lables{
-    -webkit-transform: translate3D(75%, 0, 0);
-          transform: translate3D(75%, 0, 0);
-}
+
