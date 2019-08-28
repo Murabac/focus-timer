@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Start} from '../buttons/start.component'
 import './setTimer.styles.css'
 
 export const SetTimer = props => {
@@ -21,7 +21,8 @@ export const SetTimer = props => {
                 <label className="lables" for="seconds">Seconds</label>            
                 <input type="number"   className="inputs" id="seconds" name="seconds"/>
             </div>
-
+            
+            <Start />
         </div>
 
     )

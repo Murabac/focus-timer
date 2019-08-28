@@ -1,0 +1,103 @@
+.button-container{
+    vertical-align: middle;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .start{
+      background-color: #27ae60;
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+      padding:  10px 20px ;
+      border-bottom:4px solid #017532;
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: .03em;
+      position: relative;
+      -webkit-animation: button-bounce 2200ms forwards infinite cubic-bezier(0.165, 0.84, 0.44, 1);
+      -moz-animation: button-bounce 2200ms forwards infinite cubic-bezier(0.165, 0.84, 0.44, 1);
+      animation: button-bounce 2200ms forwards infinite cubic-bezier(0.165, 0.84, 0.44, 1);
+      -webkit-transition: background-color 0.3s ease;
+      -moz-transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease;
+      /*&:before */
+      /*&:hover:before,*/
+  }
+  .start:hover{
+      cursor: pointer;
+  }
+  .start:focus{
+      outline: none;
+  }
+  .start:active{
+      border-bottom:1px solid #017532;
+      transform: translateY(3px);
+  }
+  .start::after{
+      background-color: #27ae60;
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    -webkit-animation: button-blip 2200ms forwards infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+    -moz-animation: button-blip 2200ms forwards infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation: button-blip 2200ms forwards infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .start:hover::after{
+      border-color: transparent;
+  }
+  @keyframes button-bounce {
+      0% {
+        transform: scale(1);
+      }
+      10% {
+        transform: scale(0.96);
+      }
+      20% {
+        transform: scale(1.04);
+      }
+      52%,
+      100% {
+        transform: scale(1);
+      }
+    }@keyframes button-blip {
+    0% {
+      transform: scaleX(1) scaleY(1);
+      opacity: 0;
+    }
+    10% {
+      transform: scaleX(1) scaleY(1);
+      opacity: .7;
+    }
+    30%, 
+    99% {
+      transform: scaleX(1.08) scaleY(1.35);
+      opacity: 0;
+    }
+    100% {
+      transform: scaleX(1) scaleY(1);
+      opacity: 0;
+    }
+  }
+  @keyframes button-blip {
+      0% {
+        transform: scaleX(1) scaleY(1);
+        opacity: 0;
+      }
+      10% {
+        transform: scaleX(1) scaleY(1);
+        opacity: .7;
+      }
+      30%, 
+      99% {
+        transform: scaleX(1.08) scaleY(1.35);
+        opacity: 0;
+      }
+      100% {
+        transform: scaleX(1) scaleY(1);
+        opacity: 0;
+      }
+    }
